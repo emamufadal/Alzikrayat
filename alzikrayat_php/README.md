@@ -5,7 +5,7 @@
 Alzikrayat is a PHP-based web application developed as a Software Engineering project. The project is organized into separate application components to make the code easier to maintain, understand, and extend.
 
 ## Main Features
-
+ 
 - User-facing web pages and application views
 - Server-side functionality implemented with PHP
 - Database integration
