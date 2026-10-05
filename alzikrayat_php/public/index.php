@@ -48,7 +48,7 @@ $router->add('GET', '/photo/{id}/delete', ['PhotoController', 'delete']);
 // Register the route used to create photo comments.
 $router->add('POST', '/comment/store', ['CommentController', 'store']);
 
-// Dispatch the current HTTP request to the matching controller action.
+// Send the request to the correct controller action.
 $router->dispatch(
     $_SERVER['REQUEST_METHOD'],
     $_SERVER['REQUEST_URI']
