@@ -1,0 +1,144 @@
+/* Set the general page background. */
+body {
+    background: #f7f8fb;
+}
+
+/* Style the home page hero section. */
+.hero {
+    background: linear-gradient(135deg, #eef4ff, #fff);
+}
+
+.hero-icon {
+    font-size: 9rem;
+}
+
+/* Control the standard gallery image size and cropping. */
+.gallery-image {
+    height: 240px;
+    object-fit: cover;
+}
+
+/* Style the large image shown on the photo details page. */
+.detail-image {
+    max-height: 650px;
+    width: 100%;
+    object-fit: contain;
+    background: #111;
+}
+
+/* Add a smooth transition to photo cards. */
+.photo-card {
+    transition: 0.2s;
+}
+
+.photo-card:hover {
+    transform: translateY(-4px);
+}
+
+/* Style the empty gallery message. */
+.empty-state {
+    border: 2px dashed #dee2e6;
+    background: #fff;
+}
+
+.comment {
+    background: #fff;
+}
+
+/* Adjust the hero and gallery for small screens. */
+@media (max-width: 576px) {
+    .hero {
+        padding: 2rem !important;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-icon {
+        font-size: 6rem;
+    }
+
+    .gallery-image {
+        height: 210px;
+    }
+}
+
+/* Gallery style switcher */
+/* Style the gallery layout controls. */
+.gallery-toolbar .btn {
+    min-width: 105px;
+}
+
+.gallery-grid .gallery-item {
+    transition: width 0.2s ease, max-width 0.2s ease;
+}
+
+/* Set the four-column gallery layout. */
+.gallery-style-four .gallery-item {
+    flex: 0 0 auto;
+    width: 25%;
+}
+
+/* Set the list-style gallery layout. */
+.gallery-style-list .gallery-item {
+    width: 100%;
+}
+
+.gallery-style-list .photo-card {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.gallery-style-list .gallery-image {
+    width: 260px;
+    min-width: 260px;
+    height: 210px;
+}
+
+/* Set the full-width gallery layout. */
+.gallery-style-full .gallery-item {
+    width: 100%;
+}
+
+.gallery-style-full .gallery-image {
+    height: 430px;
+}
+
+@media (max-width: 991.98px) {
+    .gallery-style-four .gallery-item {
+        width: 50%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .gallery-toolbar .btn-group {
+        width: 100%;
+    }
+
+    .gallery-toolbar .gallery-style-btn {
+        flex: 1 1 auto;
+        min-width: 0;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .gallery-style-four .gallery-item {
+        width: 100%;
+    }
+
+    .gallery-style-list .photo-card {
+        flex-direction: column;
+    }
+
+    .gallery-style-list .gallery-image {
+        width: 100%;
+        min-width: 0;
+        height: 240px;
+    }
+
+    .gallery-style-full .gallery-image {
+        height: 300px;
+    }
+}
